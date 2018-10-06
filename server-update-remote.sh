@@ -22,7 +22,7 @@ printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' - >> /home/guguleth/server
 }
 
 # Wordpress updates.
-{ php wp-cli.phar cli update; php wp-cli.phar cli update; php wp-cli.phar core update; php wp-cli.phar checksum core; php wp-cli.phar plugin update --all; php wp-cli.phar theme update --all; php wp-cli.phar transient delete --all; php wp-cli.phar db optimize; } >> /home/guguleth/server-updater-log.txt
+{ cd ~/ php wp-cli.phar cli update; cd ~/ php wp-cli.phar cli update; cd ~/ php wp-cli.phar core update; cd ~/ php wp-cli.phar checksum core; cd ~/ php wp-cli.phar plugin update --all; cd ~/ php wp-cli.phar theme update --all; cd ~/ php wp-cli.phar transient delete --all; cd ~/ php wp-cli.phar db optimize; } >> /home/guguleth/server-updater-log.txt
 catcher Wordpress
 line
 
