@@ -1,6 +1,6 @@
 #!/bin/sh
 # This script updates php apps. Place it in the root.
-# Version 4.1 (3 February 2020)
+# Version 4.1.1 (10 September 2020)
 
 # Set evironment path for running with Crontab
 export PATH=/path-to-your-bin-folder/bin
